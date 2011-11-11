@@ -1,0 +1,51 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  reno: 1
+  cnamek: MyString
+  cname: MyString
+  posi: MyString
+  repk: MyString
+  rep: MyString
+  bd: 2011-09-06
+  ad: MyString
+  tel: MyString
+  fax: MyString
+  eml: MyString
+  cap: 1
+  cy: 1
+  emp: 1
+  acc: 2011-09-06
+  md: false
+  wbu: false
+  wco: false
+  wgs: false
+  io: false
+  ban: false
+  note: MyText
+  bno: 1
+
+two:
+  reno: 1
+  cnamek: MyString
+  cname: MyString
+  posi: MyString
+  repk: MyString
+  rep: MyString
+  bd: 2011-09-06
+  ad: MyString
+  tel: MyString
+  fax: MyString
+  eml: MyString
+  cap: 1
+  cy: 1
+  emp: 1
+  acc: 2011-09-06
+  md: false
+  wbu: false
+  wco: false
+  wgs: false
+  io: false
+  ban: false
+  note: MyText
+  bno: 1

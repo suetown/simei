@@ -1,0 +1,121 @@
+<p id="notice"><%= notice %></p>
+<%= link_to '戻る', '/index.html' %>
+
+<p>
+  <b>受付番号:</b>
+  <%= @pcorp.reno %>
+</p>
+
+<p>
+  <b>商号名称カナ:</b>
+  <%= @pcorp.cnamek %>
+</p>
+
+<p>
+  <b>商号名称:</b>
+  <%= @pcorp.cname %>
+</p>
+
+<p>
+  <b>役職名:</b>
+  <%= @pcorp.posi %>
+</p>
+
+<p>
+  <b>代表者カナ:</b>
+  <%= @pcorp.repk %>
+</p>
+
+<p>
+  <b>代表者:</b>
+  <%= @pcorp.rep %>
+</p>
+
+<p>
+  <b>生年月日:</b>
+  <%= @pcorp.bd %>
+</p>
+
+<p>
+  <b>住所:</b>
+  <%= @pcorp.ad %>
+</p>
+
+<p>
+  <b>Tel:</b>
+  <%= @pcorp.tel %>
+</p>
+
+<p>
+  <b>Fax:</b>
+  <%= @pcorp.fax %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @pcorp.eml %>
+</p>
+
+<p>
+  <b>自己資本額（千円）:</b>
+  <%= @pcorp.cap %>
+</p>
+
+<p>
+  <b>営業年数:</b>
+  <%= @pcorp.cy %>
+</p>
+
+<p>
+  <b>総職員数:</b>
+  <%= @pcorp.emp %>
+</p>
+
+<p>
+  <b>決算日:</b>
+  <%= @pcorp.acc %>
+</p>
+
+<p>
+  <b>受任有無:</b>
+  <%= @pcorp.md %>
+</p>
+
+<p>
+  <b>希望業種（建設）:</b>
+  <%= @pcorp.wbu %>
+</p>
+
+<p>
+  <b>希望業種（コンサル）:</b>
+  <%= @pcorp.wco %>
+</p>
+
+<p>
+  <b>希望業種（物品）:</b>
+  <%= @pcorp.wgs %>
+</p>
+
+<p>
+  <b>町外区分:</b>
+  <%= @pcorp.io %>
+</p>
+
+<p>
+  <b>指名停止:</b>
+  <%= @pcorp.ban %>
+</p>
+
+<p>
+  <b>備考:</b>
+  <%= @pcorp.note %>
+</p>
+
+<p>
+  <b>ボックス番号:</b>
+  <%= @pcorp.bno %>
+</p>
+
+<!--   <%= link_to 'Edit', edit_pcorp_path(@pcorp) %>   --> |
+<!--  <%= link_to '戻る', pcorps_path %>  -->
+<%= link_to '戻る', '/index.html' %>

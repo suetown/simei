@@ -1,0 +1,11 @@
+%= form_tag :action => 'ph1' do %>
+  <div class="field">
+    <%= label_tag 'reno', '受付番号' %><br />
+    <%= text_field_tag 'reno' %>
+  </div>
+  <div class="field">
+    <%= label_tag 'cname', '商号または名称' %><br />
+    <%= text_field_tag 'cname' %>
+  </div>
+    <%= submit_tag '検索' %>
+<% end %>　

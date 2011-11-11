@@ -1,0 +1,68 @@
+<h1>登録業者一覧</h1>
+
+<table>
+  <tr>
+    <th>受付番号</th>
+<!--     <th>商号又は名称カナ</th> -->
+    <th>商号又は名称</th>
+    <th>代表者役職名</th>
+<!--     <th>代表者名カナ</th> -->
+    <th>代表者名</th>
+<!--     <th>生年月日</th> -->
+    <th>住所</th>
+    <th>TEL</th>
+    <th>FAX</th>
+<!--    <th>Eml</th> -->
+<!--     <th>自己資本額（千円）</th> -->
+<!--     <th>営業年数</th> -->
+<!--     <th>総職員数</th> -->
+<!--     <th>決算日（直近）</th> -->
+<!--     <th>受託</th> -->
+<!--     <th>希望：建設</th> -->
+<!--     <th>希望：コンサル</th> -->
+<!--     <th>希望：物品</th> -->
+<!--     <th>町外区分</th> -->
+<!--     <th>指名停止</th> -->
+<!--     <th>備考</th> -->
+<!--     <th>BOX番号</th> -->
+    <th></th>
+    <th></th>
+    <th></th>
+  <hr size="1" >
+  </tr>
+
+<% @pcorps.each do |pcorp| %>
+  <tr style="background-color:<%= cycle('#FFFFFF', '#F5F5F5') %>">
+    <td><%= pcorp.reno %></td>
+<!--     <td><%= pcorp.cnamek %></td> -->
+    <td><%= pcorp.cname %></td>
+    <td><%= pcorp.posi %></td>
+<!--     <td><%= pcorp.repk %></td> -->
+    <td><%= pcorp.rep %></td>
+<!--     <td><%= pcorp.bd %></td> -->
+    <td><%= pcorp.ad %></td>
+    <td><%= pcorp.tel %></td>
+    <td><%= pcorp.fax %></td>
+<!--     <td><%= pcorp.eml %></td> -->
+<!--     <td><%= pcorp.cap %></td> -->
+<!--     <td><%= pcorp.cy %></td> -->
+<!--     <td><%= pcorp.emp %></td> -->
+<!--     <td><%= pcorp.acc %></td> -->
+<!--     <td><%= pcorp.md %></td> -->
+<!--     <td><%= pcorp.wbu %></td> -->
+<!--     <td><%= pcorp.wco %></td> -->
+<!--     <td><%= pcorp.wgs %></td> -->
+<!--     <td><%= pcorp.io %></td> -->
+<!--     <td><%= pcorp.ban %></td> -->
+<!--     <td><%= pcorp.note %></td> -->
+<!--     <td><%= pcorp.bno %></td> -->
+    <td><%= link_to '詳細', pcorp %></td>
+<!--    <td><%= link_to 'Edit', edit_pcorp_path(pcorp) %></td> -->
+<!--    <td><%= link_to 'Destroy', pcorp, :confirm => 'Are you sure?', :method => :delete %></td> -->
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<!-- <%= link_to 'New Pcorp', new_pcorp_path %> -->

@@ -1,0 +1,4 @@
+# coding: utf-8
+class Pcorp < ActiveRecord::Base
+  # scope :name, where('reno like ? AND cname like ?', '%'+params[:reno].tr('０-９','0-9')+'%', '%'+params[:cname]+'%').order('reno ASC')
+end

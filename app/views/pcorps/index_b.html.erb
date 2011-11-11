@@ -1,0 +1,67 @@
+<h1>Listing pcorps</h1>
+
+<table>
+  <tr>
+    <th>Reno</th>
+    <th>Cnamek</th>
+    <th>Cname</th>
+    <th>Posi</th>
+    <th>Repk</th>
+    <th>Rep</th>
+    <th>Bd</th>
+    <th>Ad</th>
+    <th>Tel</th>
+    <th>Fax</th>
+    <th>Eml</th>
+    <th>Cap</th>
+    <th>Cy</th>
+    <th>Emp</th>
+    <th>Acc</th>
+    <th>Md</th>
+    <th>Wbu</th>
+    <th>Wco</th>
+    <th>Wgs</th>
+    <th>Io</th>
+    <th>Ban</th>
+    <th>Note</th>
+    <th>Bno</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pcorps.each do |pcorp| %>
+  <tr>
+    <td><%= pcorp.reno %></td>
+    <td><%= pcorp.cnamek %></td>
+    <td><%= pcorp.cname %></td>
+    <td><%= pcorp.posi %></td>
+    <td><%= pcorp.repk %></td>
+    <td><%= pcorp.rep %></td>
+    <td><%= pcorp.bd %></td>
+    <td><%= pcorp.ad %></td>
+    <td><%= pcorp.tel %></td>
+    <td><%= pcorp.fax %></td>
+    <td><%= pcorp.eml %></td>
+    <td><%= pcorp.cap %></td>
+    <td><%= pcorp.cy %></td>
+    <td><%= pcorp.emp %></td>
+    <td><%= pcorp.acc %></td>
+    <td><%= pcorp.md %></td>
+    <td><%= pcorp.wbu %></td>
+    <td><%= pcorp.wco %></td>
+    <td><%= pcorp.wgs %></td>
+    <td><%= pcorp.io %></td>
+    <td><%= pcorp.ban %></td>
+    <td><%= pcorp.note %></td>
+    <td><%= pcorp.bno %></td>
+    <td><%= link_to 'Show', pcorp %></td>
+    <td><%= link_to 'Edit', edit_pcorp_path(pcorp) %></td>
+    <td><%= link_to 'Destroy', pcorp, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pcorp', new_pcorp_path %>

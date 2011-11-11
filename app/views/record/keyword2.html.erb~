@@ -1,0 +1,24 @@
+%= form_tag :action => 'ph1' do %>
+  <div class="field">
+    <%= label_tag 'reno', '受付番号' %><br />
+    <%= text_field_tag 'reno' %>
+  </div>
+  <div class="field">
+    <%= label_tag 'cname', '商号または名称' %><br />
+    <%= text_field_tag 'cname' %>
+  </div>
+
+  <div class="field">
+    <%= label_tag 'wbu', '希望業種（建設）' %><br />
+    <%= check_box_tag 'wbu' %>
+  </div>
+  <div class="field">
+    <%= label_tag 'wco', '希望業種（コンサル）' %><br />
+    <%= check_box_tag 'wco' %>
+  </div>
+  <div class="field">
+    <%= label_tag 'wbu', '希望業種（物品）' %><br />
+    <%= check_box_tag 'wgs' %>
+  </div>
+    <%= submit_tag '検索' %>
+<% end %>　

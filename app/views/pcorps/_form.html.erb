@@ -1,0 +1,109 @@
+<%= form_for(@pcorp) do |f| %>
+  <% if @pcorp.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pcorp.errors.count, "error") %> prohibited this pcorp from being saved:</h2>
+
+      <ul>
+      <% @pcorp.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :reno %><br />
+    <%= f.text_field :reno %>
+  </div>
+  <div class="field">
+    <%= f.label :cnamek %><br />
+    <%= f.text_field :cnamek %>
+  </div>
+  <div class="field">
+    <%= f.label :cname %><br />
+    <%= f.text_field :cname %>
+  </div>
+  <div class="field">
+    <%= f.label :posi %><br />
+    <%= f.text_field :posi %>
+  </div>
+  <div class="field">
+    <%= f.label :repk %><br />
+    <%= f.text_field :repk %>
+  </div>
+  <div class="field">
+    <%= f.label :rep %><br />
+    <%= f.text_field :rep %>
+  </div>
+  <div class="field">
+    <%= f.label :bd %><br />
+    <%= f.date_select :bd %>
+  </div>
+  <div class="field">
+    <%= f.label :ad %><br />
+    <%= f.text_field :ad %>
+  </div>
+  <div class="field">
+    <%= f.label :tel %><br />
+    <%= f.text_field :tel %>
+  </div>
+  <div class="field">
+    <%= f.label :fax %><br />
+    <%= f.text_field :fax %>
+  </div>
+  <div class="field">
+    <%= f.label :eml %><br />
+    <%= f.text_field :eml %>
+  </div>
+  <div class="field">
+    <%= f.label :cap %><br />
+    <%= f.text_field :cap %>
+  </div>
+  <div class="field">
+    <%= f.label :cy %><br />
+    <%= f.text_field :cy %>
+  </div>
+  <div class="field">
+    <%= f.label :emp %><br />
+    <%= f.text_field :emp %>
+  </div>
+  <div class="field">
+    <%= f.label :acc %><br />
+    <%= f.date_select :acc %>
+  </div>
+  <div class="field">
+    <%= f.label :md %><br />
+    <%= f.check_box :md %>
+  </div>
+  <div class="field">
+    <%= f.label :wbu %><br />
+    <%= f.check_box :wbu %>
+  </div>
+  <div class="field">
+    <%= f.label :wco %><br />
+    <%= f.check_box :wco %>
+  </div>
+  <div class="field">
+    <%= f.label :wgs %><br />
+    <%= f.check_box :wgs %>
+  </div>
+  <div class="field">
+    <%= f.label :io %><br />
+    <%= f.check_box :io %>
+  </div>
+  <div class="field">
+    <%= f.label :ban %><br />
+    <%= f.check_box :ban %>
+  </div>
+  <div class="field">
+    <%= f.label :note %><br />
+    <%= f.text_area :note %>
+  </div>
+  <div class="field">
+    <%= f.label :bno %><br />
+    <%= f.text_field :bno %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

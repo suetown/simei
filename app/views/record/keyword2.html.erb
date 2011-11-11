@@ -1,0 +1,15 @@
+<%= form_tag :action => 'ph2' do %>
+  <div class="field">
+    <%= label_tag 'wbu', '希望業種（建設）' %><br />
+    <%= check_box_tag 'wbu' %>
+  </div>
+  <div class="field">
+    <%= label_tag 'wco', '希望業種（コンサル）' %><br />
+    <%= check_box_tag 'wco' %>
+  </div>
+  <div class="field">
+    <%= label_tag 'wbu', '希望業種（物品）' %><br />
+    <%= check_box_tag 'wgs' %>
+  </div>
+    <%= submit_tag '検索' %>
+<% end %>　
